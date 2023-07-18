@@ -1,0 +1,173 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 30rem;
+  background-image: url("../../images/fianza_banner.jpg");
+  /* background-attachment: fixed; */
+  background-size: cover;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(101, 100, 97);
+  text-align: center;
+  color: whitesmoke;
+
+}
+
+.banner h1 {
+  font-family: "Dancing script";
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 1rem;
+  color: brown;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 50%;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+.category {
+  display: flex;
+  margin: 0.5rem auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  height: 60px;
+  background-color: #f9eec9;
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #888383;
+  font-weight: 500;
+  position: relative;
+}
+
+
+.nav-elements ul a:hover {
+  cursor: pointer;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand h1 {
+  font-family: "Dancing script";
+  font-size: 3rem;
+  color: #2f234f;
+  padding: 1rem;
+}
+.brand img {
+  width: 5rem;
+  /* margin: 8px; */
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+body{
+    background-color: rgb(247, 237, 222);
+}
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    text-align: right;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: rgba(0, 0, 0, 1);
+    width: 0px;
+    height: 60vh;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    position: absolute;
+    
+    
+  }
+  .banner {
+    height: 20rem;
+    position: relative;
+    z-index: -1;
+    
+  }
+  .nav-elements.active {
+    width: 50%;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 10%;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  .nav-elements ul a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .nav-elements ul a:hover {
+    cursor: pointer;
+  }
+
+}
+
+

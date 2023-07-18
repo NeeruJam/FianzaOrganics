@@ -1,0 +1,48 @@
+.productCard{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 1rem;
+  transition: all 0.5s;
+  padding-bottom: 0.5rem;
+  font-family: "Josefin Sans";
+  text-align: center;
+  font-size: 1rem;
+}
+
+.productCard img{
+    width: 70%;
+}
+
+.productCard:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  
+    transform: translateY(-1vmax);
+  }
+
+  @media screen and (max-width: 600px) {
+    .productCard{
+      width: 50%;
+    }
+    .productCard > p {
+      font-size: 0.3rem;
+    }
+  
+    .productCard > div {
+      margin: 0vmax;
+      display: block;
+    }
+  
+    .productCard > span {
+      font-size: 1.5vmax;
+    }
+  
+    .productCard > div > span {
+      margin: 0 0.5rem;
+      font: 300 1rem "Josefin Sans";
+    }
+  }

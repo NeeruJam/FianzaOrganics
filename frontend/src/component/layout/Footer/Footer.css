@@ -1,0 +1,63 @@
+.footer {
+  background-color: #a3a5a9;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+.leftFooter {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.leftFooter > ul {
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+}
+.leftFooter li {
+  padding: 0.2rem;
+}
+
+.leftFooter a {
+  text-decoration: none;
+}
+.midFooter {
+  width: 50%;
+  text-align: center;
+}
+
+.midFooter > h1 {
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  color: black;
+}
+.midFooter > p {
+  max-width: 50%;
+  font-family: "Dancing Script", cursive;
+  margin: 0.5rem auto;
+}
+
+.rightFooter {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightFooter > a {
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  color: white;
+  transition: all 0.5s;
+  padding: 0.5rem;
+}
+
+.rightFooter > a:hover {
+  color: black;
+}
