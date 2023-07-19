@@ -118,8 +118,8 @@ function LoginSignUp() {
             <div className="LoginSignUpBox">
               <div>
                 <div className="login_signUp_toggle">
-                  <h5 onClick={(e) => switchTabs(e, "login")}>LOGIN</h5>
-                  <h5 onClick={(e) => switchTabs(e, "register")}>REGISTER</h5>
+                  <h5 className='tab' onClick={(e) => switchTabs(e, "login")}>LOGIN</h5>
+                  <h5 className='tab' onClick={(e) => switchTabs(e, "register")}>REGISTER</h5>
                 </div>
                 <button ref={switcherTab}></button>
               </div>

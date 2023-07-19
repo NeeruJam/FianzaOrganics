@@ -74,7 +74,7 @@ function Navbar() {
               <NavLink to="/login">Login</NavLink>
             </li>}
             <li>
-              <NavLink to="/cart" onClick={<Cart />}>Cart</NavLink>
+              <NavLink to="/cart" >Cart</NavLink>
             </li>
             
           </ul>
