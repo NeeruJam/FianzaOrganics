@@ -21,8 +21,8 @@ function UpdateProfile() {
   
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [avatar, setAvatar] = useState();
-    const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
+    // const [avatar, setAvatar] = useState();
+    // const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
   
     const updateProfileSubmit = (e) => {
       e.preventDefault();
@@ -31,7 +31,7 @@ function UpdateProfile() {
   
       myForm.set("name", name);
       myForm.set("email", email);
-      myForm.set("avatar", avatar);
+      // myForm.set("avatar", avatar);
       dispatch(updateProfile(myForm));
     };
   
@@ -40,8 +40,8 @@ function UpdateProfile() {
   
       reader.onload = () => {
         if (reader.readyState === 2) {
-          setAvatarPreview(reader.result);
-          setAvatar(reader.result);
+          // setAvatarPreview(reader.result);
+          // setAvatar(reader.result);
         }
       };
   
@@ -52,7 +52,7 @@ function UpdateProfile() {
       if (user) {
         setName(user.name);
         setEmail(user.email);
-        setAvatarPreview(user.avatar.url);
+        // setAvatarPreview(user.avatar.url);
       }
   
       if (error) {
@@ -113,7 +113,7 @@ function UpdateProfile() {
                     />
                   </div>
   
-                  <div id="updateProfileImage">
+                  {/* <div id="updateProfileImage">
                     <img src={avatarPreview} alt="Avatar Preview" />
                     <input
                       type="file"
@@ -121,7 +121,7 @@ function UpdateProfile() {
                       accept="image/*"
                       onChange={updateProfileDataChange}
                     />
-                  </div>
+                  </div> */}
                   <input
                     type="submit"
                     value="Update"

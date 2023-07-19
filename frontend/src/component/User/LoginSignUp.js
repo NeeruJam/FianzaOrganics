@@ -37,8 +37,8 @@ function LoginSignUp() {
 
   const { name, email, password } = user;
 
-  const [avatar, setAvatar] = useState("/Profile.png");
-  const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
+  // const [avatar, setAvatar] = useState("/Profile.png");
+  // const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
 
   const loginSubmit = (e) => {
     e.preventDefault();
@@ -53,7 +53,7 @@ function LoginSignUp() {
     myForm.set("name", name);
     myForm.set("email", email);
     myForm.set("password", password);
-    myForm.set("avatar", avatar);
+    // myForm.set("avatar", avatar);
     dispatch(register(myForm));
   };
 
@@ -63,8 +63,10 @@ function LoginSignUp() {
 
       reader.onload = () => {
         if (reader.readyState === 2) {
-          setAvatarPreview(reader.result);
-          setAvatar(reader.result);
+          // setAvatarPreview(reader.result);
+
+          
+          // setAvatar(reader.result);
         }
       };
 
@@ -187,7 +189,7 @@ function LoginSignUp() {
                   />
                 </div>
 
-                <div id="registerImage">
+                {/* <div id="registerImage">
                   <img src={avatarPreview} alt="Avatar Preview" />
                   <input
                     type="file"
@@ -195,7 +197,7 @@ function LoginSignUp() {
                     accept="image/*"
                     onChange={registerDataChange}
                   />
-                </div>
+                </div> */}
                 <input type="submit" value="Register" className="signUpBtn" />
               </form>
             </div>
