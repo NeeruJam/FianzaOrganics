@@ -137,6 +137,8 @@ function App() {
         {loading === false && isAuthenticated  &&<Route isAdmin ={true} exact path="/admin/user/:id" element={<UpdateUser />} />}
 
         {loading === false && isAuthenticated  &&<Route isAdmin ={true} exact path="/admin/reviews" element={<ProductReviews />} />}
+
+        {/* <Route path ="*" element={<NotFound/>}/> */}
      
       </Routes>
 

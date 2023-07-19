@@ -118,8 +118,8 @@ function LoginSignUp() {
             <div className="LoginSignUpBox">
               <div>
                 <div className="login_signUp_toggle">
-                  <p onClick={(e) => switchTabs(e, "login")}>LOGIN</p>
-                  <p onClick={(e) => switchTabs(e, "register")}>REGISTER</p>
+                  <h5 onClick={(e) => switchTabs(e, "login")}>LOGIN</h5>
+                  <h5 onClick={(e) => switchTabs(e, "register")}>REGISTER</h5>
                 </div>
                 <button ref={switcherTab}></button>
               </div>
@@ -144,7 +144,7 @@ function LoginSignUp() {
                     onChange={(e) => setLoginPassword(e.target.value)}
                   />
                 </div>
-                <Link to="/password/forgot">Forget Password ?</Link>
+                <Link to="/password/forgot">Forgot Password ?</Link>
                 <input type="submit" value="Login" className="loginBtn" />
               </form>
               <form
