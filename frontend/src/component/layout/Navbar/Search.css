@@ -43,7 +43,7 @@
     .searchBox  input[type="text"] {
       width: 60%;
       padding: 0.7rem;
-      font: 100 0.5rem cursive;
+      font-size: 0.8rem;
     }
   
   }

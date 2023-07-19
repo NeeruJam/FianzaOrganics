@@ -103,7 +103,6 @@
 @media screen and (max-width: 600px) {
   .profileContainer {
     flex-direction: column;
-    position: relative;
     z-index: -1;
   }
   .profileContainer > div {

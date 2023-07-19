@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.198b7b19.css",
+    "main.css": "/static/css/main.62c443a2.css",
     "main.js": "/static/js/main.ad1c5135.js",
     "static/media/fianza_banner.jpg": "/static/media/fianza_banner.2f772ec99dc427f555d2.jpg",
     "static/media/glyphicons-halflings-regular.svg": "/static/media/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg",
@@ -10,11 +10,11 @@
     "static/media/glyphicons-halflings-regular.eot": "/static/media/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
     "static/media/glyphicons-halflings-regular.woff2": "/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
     "index.html": "/index.html",
-    "main.198b7b19.css.map": "/static/css/main.198b7b19.css.map",
+    "main.62c443a2.css.map": "/static/css/main.62c443a2.css.map",
     "main.ad1c5135.js.map": "/static/js/main.ad1c5135.js.map"
   },
   "entrypoints": [
-    "static/css/main.198b7b19.css",
+    "static/css/main.62c443a2.css",
     "static/js/main.ad1c5135.js"
   ]
 }
