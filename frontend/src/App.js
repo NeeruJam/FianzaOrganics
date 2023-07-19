@@ -138,7 +138,11 @@ function App() {
 
         {loading === false && isAuthenticated  &&<Route isAdmin ={true} exact path="/admin/reviews" element={<ProductReviews />} />}
 
-        <Route path ="*" element={<NotFound/>}/>
+        <Route
+          element={
+            window.location.pathname === "/process/payment" ? null : <NotFound/>
+          }
+        />
      
       </Routes>
 

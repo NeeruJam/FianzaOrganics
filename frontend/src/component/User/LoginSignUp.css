@@ -164,18 +164,18 @@
       background-color: white;
     }
     .LoginSignUpBox {
-      width: 100vw;
+      width: 100%;
       height: 95vh;
     }
     .login_signUp_toggle {
-      height: 5vmax;
-      width: 100%;
+      /* height: 5vmax; */
+      width: 40%;
       
     }
    
     .login_signUp_toggle .tab {
       font-size: 1.5rem;
-      width: 15%;
+      width: 40%;
     }
     .LoginSignUpBox > div > button {
       display: none;
@@ -187,8 +187,7 @@
   
     .loginForm > div > input,
     .signUpForm > div > input {
-      padding: 2.5vmax 5vmax;
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   
     .loginForm > div > svg,

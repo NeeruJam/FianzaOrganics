@@ -11,6 +11,7 @@
   "author": "Neeru Rai",
   "license": "ISC",
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "cloudinary": "^1.37.3",
@@ -29,4 +30,5 @@
   "engines": {
     "node": ">=14.20.1"
   }
+  
 }

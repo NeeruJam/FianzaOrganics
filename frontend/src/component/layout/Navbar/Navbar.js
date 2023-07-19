@@ -6,8 +6,8 @@ import { FiMenu } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import './Search.css';
 import { useSelector } from "react-redux";
-import UserOptions from "../Header/UserOptions.js";
-import Cart from "../../Cart/Cart.js";
+
+
 
 function Navbar() {
 
@@ -30,6 +30,8 @@ function Navbar() {
         navigate("/products");
       }
     };
+
+    
   return (
     <nav className="navbar">
       <div className="container">

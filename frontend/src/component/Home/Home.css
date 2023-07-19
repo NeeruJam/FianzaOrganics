@@ -116,6 +116,7 @@
 @media (max-width: 1200px) {
 body{
     background-color: rgb(247, 237, 222);
+    z-index: -1;
 }
   .menu-icon {
     display: block;
@@ -129,11 +130,11 @@ body{
     top: 100%;
     background: rgba(0, 0, 0, 1);
     width: 0px;
-    height: 60vh;
+    height: auto;
     transition: all 0.3s ease-in;
     overflow: hidden;
     position: absolute;
-    
+    z-index: 3;
     
   }
   .banner {
