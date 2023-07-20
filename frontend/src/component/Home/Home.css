@@ -44,19 +44,22 @@
 }
 
 .container {
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 100%;
 }
 
 .navbar {
-  height: 60px;
+  height: 10vh;
   background-color: #f9eec9;
   position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .menu-icon {
@@ -65,7 +68,7 @@
 
 .nav-elements ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style-type: none;
 }
 
@@ -94,6 +97,7 @@
 .brand {
   display: flex;
   align-items: center;
+ 
 }
 
 .brand h1 {
@@ -101,11 +105,13 @@
   font-size: 3rem;
   color: #2f234f;
   padding: 1rem;
+  
 }
 .brand img {
   width: 5rem;
   /* margin: 8px; */
   border-radius: 50%;
+  
 }
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
@@ -117,6 +123,9 @@
 body{
     background-color: rgb(247, 237, 222);
     z-index: -1;
+}
+.heading h2{
+  font-size: 2rem;
 }
   .menu-icon {
     display: block;
@@ -144,7 +153,8 @@ body{
     
   }
   .nav-elements.active {
-    width: 50%;
+    width: 80%;
+    height: auto;
   }
 
   .nav-elements ul {

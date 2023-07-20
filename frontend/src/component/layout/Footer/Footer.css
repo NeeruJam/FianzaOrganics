@@ -33,12 +33,12 @@
 
 .midFooter > h1 {
   font-size: 2rem;
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script";
   color: black;
 }
 .midFooter > p {
   max-width: 50%;
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script";
   margin: 0.5rem auto;
 }
 

@@ -56,7 +56,7 @@ padding: 1rem;
   
   .aboutSectionContainer > div > div > p {
     color: rgba(0, 0, 0, 0.623);
-    font: 100 1vmax "Roboto";
+    font-size: 1.5rem;
   }
   
   .aboutSectionContainer > div > div > button {

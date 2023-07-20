@@ -11,8 +11,17 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PeopleIcon from "@mui/icons-material/People";
 import RateReviewIcon from "@mui/icons-material/RateReview";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles(theme => ({
+  label: {
+    fontSize: "1.8rem",
+  //  fontFamily: "Roboto"
+  }
+}));
 
 function Sidebar() {
+  const classes = useStyles();
   return (
     <div className="sidebar">
       <Link className='logo' to="/">
@@ -24,11 +33,12 @@ function Sidebar() {
         </p>
       </Link>
       <Link>
+      
         <TreeView
           defaultCollapseIcon={<ExpandMoreIcon />}
           defaultExpandIcon={<ImportExportIcon />}
         >
-          <TreeItem nodeId="1" label="Products">
+          <TreeItem nodeId="1" label="Products" classes={{ label: classes.label }} >
             <Link to="/admin/products">
               <TreeItem nodeId="2" label="All" icon={<PostAddIcon />} />
             </Link>
@@ -38,6 +48,7 @@ function Sidebar() {
             </Link>
           </TreeItem>
         </TreeView>
+        
       </Link>
       <Link to="/admin/orders">
         <p>

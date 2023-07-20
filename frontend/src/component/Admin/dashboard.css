@@ -1,5 +1,5 @@
 .dashboard {
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -46,8 +46,8 @@
     background-color: rgb(255, 233, 174);
     text-decoration: none;
     padding: 1.5rem;
-    width: 10vmax;
-    height: 10vmax;
+    width: 15vmax;
+    height: 15vmax;
     margin: 2rem;
     border-radius: 100%;
     display: flex;
@@ -66,15 +66,7 @@
     color: rgb(255, 255, 255);
   }
   
-  .lineChart {
-    width: 80%;
-    margin: auto;
-  }
-  
-  .doughnutChart {
-    width: 30vmax;
-    margin: auto;
-  }
+
   
   @media screen and (max-width: 1200px) {
     .dashboard {

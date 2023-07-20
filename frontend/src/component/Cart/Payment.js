@@ -166,18 +166,6 @@ function Payment() {
               className="paymentFormBtn"
             />
 
-{/* <Card style={{ width: "20rem" }}> 
-      <Card.Img 
-        variant="top" src="https://images.pexels.com/photos/12428359/pexels-photo-12428359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-      /> 
-      <Card.Body> 
-        <Card.Title>{product.name}</Card.Title> 
-        <Card.Text>{product.description}</Card.Text> 
-        <Button variant="primary" onClick={makePayment}> 
-          Buy Now for {orderInfo.totalPrice} 
-        </Button> 
-      </Card.Body> 
-    </Card>  */}
            </form> 
         </div>
       </>

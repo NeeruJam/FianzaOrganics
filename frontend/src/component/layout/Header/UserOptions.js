@@ -11,10 +11,17 @@ import { useNavigate } from "react-router-dom";
 import { useAlert } from "react-alert";
 import { logout } from "../../../actions/userAction";
 import { useDispatch, useSelector } from "react-redux";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 
-
+const useStyles = makeStyles(theme => ({
+  tooltip: {
+    marginTop: "-.01rem",
+    fontSize: "1.5rem"
+  }
+}));
 
 function UserOptions({user}) {
+  const classes = useStyles();
     const { cartItems } = useSelector((state) => state.cart);
 
     const [open, setOpen] = useState(false);
@@ -23,7 +30,7 @@ function UserOptions({user}) {
     const dispatch = useDispatch();
   
     const options = [
-      { icon: <ListAltIcon />, name: "Orders", func: orders },
+      { icon: <ListAltIcon  />, name: "Orders", func: orders },
       { icon: <PersonIcon />, name: "Profile", func: account },
       {
         icon: (
@@ -71,7 +78,7 @@ function UserOptions({user}) {
           ariaLabel="SpeedDial tooltip example"
           onClose={() => setOpen(false)}
           onOpen={() => setOpen(true)}
-          style={{ zIndex: "11" }}
+          style={{ zIndex: "11"}}
           open={open}
           direction="down"
           className="speedDial"
@@ -90,6 +97,7 @@ function UserOptions({user}) {
               tooltipTitle={item.name}
               onClick={item.func}
               tooltipOpen={window.innerWidth <= 600 ? true : false}
+              TooltipClasses={classes}
             />
           ))}
         </SpeedDial>

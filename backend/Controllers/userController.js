@@ -25,6 +25,12 @@ exports.userRegistration = catchAsyncErrors(async(req, res, next) => {
         //   url: myCloud.secure_url,
         // },
 });
+const message = `Dear ${user.name} \n\n Thank you for registering for Fianza Organics. \n `;
+await sendEmail({
+  email: user.email,
+  subject: `Successful registration`,
+  message,
+});
 
 sendToken(user, 201, res);
 
